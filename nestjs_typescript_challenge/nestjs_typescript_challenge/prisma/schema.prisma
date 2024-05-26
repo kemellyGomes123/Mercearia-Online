@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") 
+}
+
+model Agent {
+  id    Int     @id @default(autoincrement())
+  first_name  String
+  last_name  String
+  email String  @unique
+  password String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Costumer {
+  id    Int     @id @default(autoincrement())
+  first_name  String
+  last_name  String
+  email String  @unique
+  address String 
+  password String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  first_name  String
+  last_name  String
+  email String  @unique
+  address String 
+  password String
+  saldo       Float?    @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  orders Orders[]
+  role Roles
+}
+
+
+
+model Orders {
+  id    Int     @id @default(autoincrement())
+  item  String
+  valor_total Int
+  local String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+
+  user_id Int
+  user User @relation(fields:[user_id],references:[id])
+  @@map("orders")
+
+  order_items  Item[]
+}
+
+
+model Item {
+  id Int @id @default(autoincrement())
+  name String
+  quantety Int
+  value Float
+  orders   Orders[]
+} 
+
+
+enum Roles {
+  COSTUMER
+  AGENT
+}

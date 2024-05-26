@@ -1,0 +1,150 @@
+.add_item{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+}
+
+
+.add_item > .card-content {
+    flex: 1; 
+    margin-right: 10px;
+}
+.add_item > .card-footer {
+    flex: 1; 
+    margin-left: 10px; 
+}
+
+.card_add_item{
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+
+
+.card_add_item .card-footer button{
+  padding: 8px 16px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-top: 12px;
+
+}
+
+#tabelaItens table {
+    width: 842px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+  }
+  
+ 
+#tabelaItens th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+#tabelaItens th {
+    background-color: #f2f2f2; 
+    color: #333; 
+  }
+  
+ 
+#tabelaItens tr:hover {
+    background-color: #f5f5f5; 
+  }
+
+
+/* modalStyles.css */
+
+.modal-content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.close-btn {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  line-height: 1;
+  color: #999;
+  text-decoration: none;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+
+/* modalStyles.css */
+
+.modal-form {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-form h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.modal-form form {
+  margin-top: 20px;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-form button:hover {
+  background-color: #1f87f5;
+}
+
+  
+
+  

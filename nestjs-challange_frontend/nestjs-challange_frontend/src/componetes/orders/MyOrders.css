@@ -1,0 +1,6 @@
+.MyOrders{
+    display: flex;
+}
+.MyOrders-car ul li{
+    color: black;
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "User" ADD COLUMN     "saldo" DOUBLE PRECISION DEFAULT 0;
